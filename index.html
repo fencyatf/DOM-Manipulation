@@ -37,7 +37,7 @@
         // 1. Change the text content of the paragraph with ID 'quote' to your favourite quote
 
             let quoteText = document.getElementById("quote")
-            quoteText.innerHTML = "<b> I changed the text content on the website </b>"
+            quoteText.textContent = " I changed the text content on the website";
 
 
         // 2. Change background color of all 'info-box' class divs
@@ -51,12 +51,12 @@
         // 3. Update the third list item in the task list to a different text
  
             let thirdList = document.getElementsByTagName("li")
-            thirdList[2].innerHTML = "The text has been changed by me"
+            thirdList[2].textContent = "The text has been changed by me"
 
         // 4. Append the message -"Have a great day" to the footer span using querySelector
 
             let footerSpan = document.querySelector("footer span")
-            footerSpan.innerHTML = "<b>Have a great day</b>"
+            footerSpan.innerHTML += " - <b>Have a great day</b>"
 
 
 </script>
